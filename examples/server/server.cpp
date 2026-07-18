@@ -2117,6 +2117,7 @@ int main(int argc, char ** argv) {
     svr->Get ("/metrics",             handle_metrics);
     svr->Get ("/props",               handle_props);
     svr->Get("/v1/props",             handle_props_simple);
+    svr->Get ("/models",              handle_models);
     svr->Get ("/v1/models",           handle_models);
     svr->Post("/completion",          handle_completions); // legacy
     svr->Post("/completions", handle_completions); // legacy
